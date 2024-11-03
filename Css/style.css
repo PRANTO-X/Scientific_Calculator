@@ -38,13 +38,14 @@
         color: white;
         position: relative;
         caret-color: transparent;
-        overflow: hidden; /* Hide overflow */
-        white-space: nowrap; /* Prevent wrapping */
-        text-overflow: ellipsis; /* Indicate overflow with ellipsis */
+        overflow: hidden; 
+        white-space: nowrap;
+        text-overflow: ellipsis; 
     }
     .screen-2{
         text-align: end;
         margin-bottom: 20px;
+        margin-top: 12px;
     }
 
     .btns .row{
@@ -123,7 +124,7 @@
 }
 
 .shift-btn:focus{
-    background: rgb(47, 255, 92);
+    background: rgb(47, 255, 92) !important;
 }
 
 .eql-btn:hover,
@@ -183,7 +184,7 @@
         font-size: 25px;
         padding-bottom: 10px;
     }
-   
+
     .row button {
         height: 40px;
         width: 55px;

@@ -51,7 +51,7 @@ const createCaret = () => {
     const caret = document.createElement('div');
     caret.style.position = 'absolute';
     caret.style.width = '2px'; 
-    caret.style.height = '35px'; 
+    caret.style.height = '30px'; 
     caret.style.backgroundColor = 'white'; 
     caret.style.transition = 'opacity 0.3s';
     caret.style.opacity = '0'; 
