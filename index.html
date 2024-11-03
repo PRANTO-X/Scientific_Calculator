@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+                <input type="text"  class="screen-1" id="topScreen" readonly>
+                <input type="text"  class="screen-2" readonly>
+        </div>
+
+    <div class="btns">
+ 
+    <div class="row">
+        <button onclick="toggleShift()" class="shift-btn">Shift</button>
+        <button onclick="moveLeft()">←</button>
+        <button onclick="moveRight()">→</button>
+        <button onclick="number('!')">x!</button>
+    </div> 
+
+    <div class="row">
+        <div class="button-container">
+            <small>∛x</small>
+            <button onclick="shiftNumber('√(','∛(')">√</button>
+        </div>
+        <div class="button-container">
+            <small>x<sup>3</sup></small>
+            <button onclick="shiftNumber('²','³')">x<sup>2</sup></button>
+        </div>
+        <div class="button-container">
+            <small>x<sup>-1</sup></small>
+            <button onclick="shiftNumber('^','⁻¹')">^</button>
+        </div>
+        <div class="button-container">
+            <small>10<sup>x</sup></small>
+            <button onclick="shiftNumber('log(','10^')">log</button>
+        </div>
+        <div class="button-container">
+            <small>e<sup>x</sup></small>
+            <button onclick="shiftNumber('ln(','e')">ln</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="button-container">
+            <small>sin<sup>-1</sup></small>
+            <button id="sin-btn" onclick="shiftNumber('sin(','sin⁻¹(')">sin</button>
+        </div>
+        <div class="button-container">
+            <small>cos<sup>-1</sup></small>
+            <button id="cos-btn" onclick="shiftNumber('cos(','cos⁻¹(')">cos</button>
+        </div>
+        <div class="button-container">
+            <small>tan<sup>-1</sup></small>
+            <button id="tan-btn" onclick="shiftNumber('tan(','tan⁻¹(')">tan</button>
+        </div>
+        <div class="button-container">
+            <small>%</small>
+            <button onclick="shiftNumber('(','%')">(</button>
+        </div>
+        <div class="button-container">
+            <small>𝝿</small>
+            <button onclick="shiftNumber(')','𝝿')">)</button>
+        </div>
+    </div>
+
+
+    <div class="row main-buttons">
+        <button onclick="number(7)">7</button>
+        <button onclick="number(8)">8</button>
+        <button onclick="number(9)">9</button>
+        <button onclick="backSpace()" class="del-btn">DEL</button>
+        <button onclick="allClear()" class="ac-btn">AC</button>
+    </div>
+
+    <div class="row main-buttons">
+        <button onclick="number(4)">4</button>
+        <button onclick="number(5)">5</button>
+        <button onclick="number(6)">6</button>
+        <button onclick="number('×')" class="op-btn">×</button>
+        <button onclick="number('÷')" class="op-btn">÷</button>
+    </div>
+
+    <div class="row main-buttons">
+        <button onclick="number(1)">1</button>
+        <button onclick="number(2)">2</button>
+        <button onclick="number(3)">3</button>
+        <button onclick="number('+')" class="op-btn">+</button>
+        <button onclick="number('-')" class="op-btn">-</button>
+    </div>
+
+    <div class="row main-buttons">
+        <button onclick="number('00')">00</button>
+        <button onclick="number(0)">0</button>
+        <button onclick="number('.')">.</button>
+        <button onclick="number('Ans')">Ans</button>
+        <button onclick="calculate()" class="eql-btn">=</button>
+    </div>
+    </div>
+       
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
