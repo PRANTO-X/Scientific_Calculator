@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -201,3 +202,207 @@
 
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #121212; 
+    }
+    
+    .calculator {
+        border: 1px solid #717377;
+        padding: 20px;
+        border-radius: 16px;
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);
+        box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+        position: relative;
+    }
+
+    .display{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #topScreen, .screen-2 {
+        font-family: monospace;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 35px;
+        padding-bottom: 15px;
+        color: white;
+        position: relative;
+        caret-color: transparent;
+        overflow: hidden; /* Hide overflow */
+        white-space: nowrap; /* Prevent wrapping */
+        text-overflow: ellipsis; /* Indicate overflow with ellipsis */
+    }
+    .screen-2{
+        text-align: end;
+        margin-bottom: 20px;
+    }
+
+    .btns .row{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        place-items: center;
+        margin-bottom: 16px;
+    }
+
+    .row:first-of-type{
+        grid-template-columns: repeat(4,1fr);
+    }
+       
+    .row button{
+        border-radius: 15px;
+        height: 50px;
+        width: 70px;
+        font-size: 17px;
+        border: 1px ;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: inset  0px 0px 10px rgba(113, 115, 119, 0.5);
+        outline: none;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    .row.main-buttons button{
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+
+    .btns .row.main-buttons:nth-of-type(4) {
+        margin-top: 30px;
+    }
+
+  
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 10px rgba(113, 115, 119, 0.5);
+    }
+    
+    .row button:active {
+        background-color: rgba(255, 255, 255, 0.1); 
+        box-shadow: 0px 0px 15px rgba(113, 115, 119, 0.5); 
+    }
+    
+    .row button:not(:hover):not(:active) {
+        background-color: transparent; 
+        box-shadow: inset 0px 0px 10px rgba(113, 115, 119, 0.5); 
+    }
+
+.eql-btn{
+    background: #ff6f00 !important;
+    font-size: 22px !important;
+}
+
+.ac-btn{
+    background: #ff3b30 !important;
+}
+
+.del-btn{
+    background: #1e88e5 !important;
+}
+.op-btn{
+    font-size: 25px !important;
+}
+
+.shift-btn:focus{
+    background: rgb(47, 255, 92);
+}
+
+.eql-btn:hover,
+.eql-btn:active{
+    background: #e65100; 
+    box-shadow: 0px 0px 15px rgba(255, 111, 0, 0.7); 
+}
+
+
+.ac-btn:hover,
+.ac-btn:active{
+    background: #e53935; 
+    box-shadow: 0px 0px 15px rgba(229, 57, 53, 0.7); 
+}
+
+.del-btn:hover,
+.del-btn:active{
+    background-color: #1565c0; 
+    box-shadow: 0px 0px 15px rgba(21, 101, 192, 0.7); 
+}
+    .row small{
+        margin-top: 0;
+        font-size: 15px;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    #topScreen, .screen-2 {
+        font-size: 25px;
+    }
+    .row{
+        gap: 10px;
+    }
+
+    .row button {
+        height: 45px;
+        width: 60px;
+        font-size: 16px;
+    }
+
+    .row.main-buttons button {
+        height: 60px;
+        width: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    #topScreen, .screen-2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+   
+    .row button {
+        height: 40px;
+        width: 55px;
+        font-size: 14px;
+    }
+
+    .row.main-buttons button {
+        height: 50px;
+        width: 50px;
+        font-size: 16px;
+    }
+}
+    
+
+
+
+>>>>>>> 1a27a20644a226d800b1398949321b3e750b0ba6
